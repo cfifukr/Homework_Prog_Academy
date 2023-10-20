@@ -33,9 +33,11 @@ public class Group {
 
     public Student findStudentByLastName(String lastName) throws StudentNotFoundException{
         for(int i = 0; i < students.length; i++){
-            if (students[i].getLastName().equals(lastName)){
+            if(students[i] != null) {
+                if (students[i].getLastName().equals(lastName)) {
 
-                return students[i];
+                    return students[i];
+                }
             }
         }
         throw new StudentNotFoundException("There isn't such a student");

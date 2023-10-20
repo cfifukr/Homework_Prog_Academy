@@ -1,17 +1,17 @@
 
 import java.lang.Math;
 public class Triangle {
-    private float len_s1;
-    private float len_s2;
-    private float len_s3;
+    private double s1;
+    private double s2;
+    private double s3;
 
 
 
-    public Triangle(float len_s1, float len_s2, float len_s3){
+    public Triangle(double s1, double s2, double s3){
         super();
-        this.len_s1 = len_s1;
-        this.len_s2 = len_s2;
-        this.len_s3 = len_s3;
+        this.s1 = s1;
+        this.s2 = s2;
+        this.s3 = s3;
 
     }
 
@@ -19,59 +19,59 @@ public class Triangle {
         super();
     }
 
-    public float getLen_s1() {
-        return len_s1;
+    public double getS1() {
+        return s1;
     }
 
-    public float getLen_s2() {
-        return len_s2;
+    public double getS2() {
+        return s2;
     }
 
-    public float getLen_s3() {
-        return len_s3;
+    public double getS3() {
+        return s3;
     }
 
 
 
-    public void setLen_s3(float len_s3) {
-        this.len_s3 = len_s3;
+    public void setS3(double s3) {
+        this.s3 = s3;
     }
 
-    public void setLen_s2(float len_s2) {
-        this.len_s2 = len_s2;
+    public void setS2(double s2) {
+        this.s2 = s2;
     }
 
-    public void setLen_s1(float len_s1) {
-        this.len_s1 = len_s1;
+    public void setS1(double s1) {
+        this.s1 = s1;
     }
 
 
 
 
     public Boolean checkTriangle() {
-        if ((this.len_s1 + this.len_s2 > this.len_s3) &&
-                (this.len_s2 + this.len_s3 > this.len_s1) &&
-                (this.len_s3 + this.len_s1 > this.len_s2)) {
+        if ((this.s1 + this.s2 > this.s3) &&
+                (this.s2 + this.s3 > this.s1) &&
+                (this.s3 + this.s1 > this.s2)) {
             return true;
         } else {
             return false;
         }
     }
 
-    public float PerimetrTriangle(){
+    public double perimetrTriangle(){
         if (this.checkTriangle() == true) {
-            return this.len_s1 + this.len_s2 + this.len_s3;
+            return this.s1 + this.s2 + this.s3;
         }else{
-            System.out.println("ТРЕУГОЛЬНИК СО СТОРОНАМИ " + this.len_s1 + "  " + this.len_s2 + "  " + this.len_s3 + " НЕВЕРНЫЙ");
+            System.out.println("ТРЕУГОЛЬНИК СО СТОРОНАМИ " + this.s1 + "  " + this.s2 + "  " + this.s3 + " НЕВЕРНЫЙ");
             System.out.println("Сума двох сторон треугольника должна быть больше чем третья сторона");
             throw new ArithmeticException("Сума двох сторон треугольника должна быть больше чем третья сторона");
         }
     }
 
-    public double AreaTriangle(){
-        float p = this.PerimetrTriangle();
-        float half_p = p / 2;
-        float a = half_p * (half_p - this.len_s1) * (half_p - this.len_s2) * (half_p - this.len_s3);
+    public double areaTriangle(){
+        double p = this.perimetrTriangle();
+        double half_p = p / 2;
+        double a = half_p * (half_p - this.s1) * (half_p - this.s2) * (half_p - this.s3);
 
         return Math.sqrt(a);
 
@@ -81,16 +81,12 @@ public class Triangle {
 
 
 
-
-
-
-
     @Override
     public String toString() {
         return "Triangle{" +
-                "len_s1=" + len_s1 +
-                ", len_s2=" + len_s2 +
-                ", len_s3=" + len_s3 +
+                "len_s1=" + s1 +
+                ", len_s2=" + s2 +
+                ", len_s3=" + s3 +
                 '}';
     }
 }

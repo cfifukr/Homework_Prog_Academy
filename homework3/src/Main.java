@@ -32,8 +32,9 @@ public class Main {
             CZ381.addStudent(Dmytro);//7
             CZ381.addStudent(Olga);//8
             CZ381.addStudent(Inna);//9
-            CZ381.addStudent(Ivan);//10
+            //CZ381.addStudent(Ivan);//10
             //CZ381.addStudent(ExtaStudent);
+
         }catch(GroupOverflowException e){
             System.out.println("Group is full");
 
@@ -42,7 +43,7 @@ public class Main {
 
 
         try {
-            System.out.println(CZ381.findStudentByLastName("Boiko"));
+            System.out.println(CZ381.findStudentByLastName("Borovih"));
             System.out.println(CZ381.findStudentByLastName("Shevchenko"));
             System.out.println(CZ381.removeStudentByID(111));
             System.out.println(CZ381.removeStudentByID(325));

@@ -23,8 +23,8 @@ public class Main {
         //System.out.println(tr2.checkTriangle());
         //System.out.println(tr2.PerimetrTriangle());
 
-        System.out.println(tr1.AreaTriangle());
-        System.out.println(tr2.AreaTriangle());
+        System.out.println(tr1.areaTriangle());
+        System.out.println(tr2.areaTriangle());
         //System.out.println(tr3.AreaTriangle()); //пример который выбивает ошибку
 
 

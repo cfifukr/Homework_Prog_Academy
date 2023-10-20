@@ -37,9 +37,10 @@ public class Main_task1 {
         System.out.println(Vlad);
 
         Reks.setSick(true);
+
         System.out.println(Reks);
-        Vlad.treatment_dog(Reks);
-        Vlad.treatment_cat(Barsik);
+        Vlad.treatment(Reks);
+        Vlad.treatment(Barsik);
 
 
 

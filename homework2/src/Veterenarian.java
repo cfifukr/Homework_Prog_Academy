@@ -16,22 +16,13 @@ public class Veterenarian {
         this.name = name;
     }
 
-    public void treatment_dog(Dog animal) {
+    public void treatment(Animal animal) {
         if (animal.isSick() == true){
             animal.setSick(false);
-            System.out.println(animal.getName() + " has been successfully treated");
+            System.out.println("Pet has been successfully treated");
         }else{
-            System.out.println( animal.getName() + " doesn't need treatment");
+            System.out.println("Pet doesn't need treatment");
 
-        }
-
-    }
-    public void treatment_cat(Cat animal) {
-        if (animal.isSick() == true){
-            animal.setSick(false);
-            System.out.println(animal.getName() + " has been successfully treated");
-        }else{
-            System.out.println( animal.getName() + " doesn't need treatment");
         }
 
     }
