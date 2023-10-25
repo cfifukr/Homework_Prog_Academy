@@ -1,7 +1,7 @@
 import java.util.Random;
 public class RandomArray {
-    int arrayLength = 1000000;
-    int[] randomNumbersArray = new int[arrayLength];
+    private int arrayLength = 1000000;
+    private int[] randomNumbersArray = new int[arrayLength];
     Random random = new Random();
 
     public void addIntArray(int maxValue){
