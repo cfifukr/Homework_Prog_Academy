@@ -70,8 +70,8 @@ public class Triangle {
 
     public double areaTriangle(){
         double p = this.perimetrTriangle();
-        double half_p = p / 2;
-        double a = half_p * (half_p - this.s1) * (half_p - this.s2) * (half_p - this.s3);
+        double half = p / 2;
+        double a = half * (half - this.s1) * (half - this.s2) * (half - this.s3);
 
         return Math.sqrt(a);
 
