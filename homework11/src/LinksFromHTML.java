@@ -20,14 +20,15 @@ public class LinksFromHTML {
                     if(temp == null){
                         break;
                     }
-                    if(temp.contains("https")){
-                        int startIndex = temp.indexOf("https");
+                    if(temp.contains("href")){
+                        int startIndex = temp.indexOf("href") + 6;
                         int endIndex = temp.indexOf('"', startIndex);
                         if (startIndex != -1 && endIndex != -1) {
                             String line = temp.substring(startIndex, endIndex);
-
-                            if(links.contains(line) == false){
-                                links.add(line);
+                            if(CheckURL.checkURLFromString(line)) {
+                                if (links.contains(line) == false) {
+                                    links.add(line);
+                                }
                             }
                         }
 

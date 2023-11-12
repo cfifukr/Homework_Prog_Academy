@@ -5,7 +5,7 @@ public class TaskThree {
 
         String fileNameToSearchA = "aaaainput.docx";
         String fileNameToSearchB = "aaaoutput.docx";
-        String fileNameToSearchC = "aaaviews.py";
+        String fileNameToSearchC = "aaagit views.py";
         String fileNameToSearchD = "main.java";
 
         String searchDirectory = "/Users/malchikmac/Desktop";

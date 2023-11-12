@@ -8,8 +8,7 @@
       <change beforePath="$PROJECT_DIR$/../homework11/src/CheckURL.java" beforeDir="false" afterPath="$PROJECT_DIR$/../homework11/src/CheckURL.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../homework11/src/LinksFromHTML.java" beforeDir="false" afterPath="$PROJECT_DIR$/../homework11/src/LinksFromHTML.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../homework11/src/TaskOne.java" beforeDir="false" afterPath="$PROJECT_DIR$/../homework11/src/TaskOne.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TaskThree/TaskThree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TaskThree/TaskThree.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +45,7 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "onboarding.tips.debug.path": "/Users/malchikmac/Desktop/folder/Homework Prog_Academy/homework7/src/Main.java",
     "vue.rearranger.settings.migration": "true"
   }
@@ -67,7 +67,7 @@
       <option name="presentableId" value="Default" />
       <updated>1699613726361</updated>
       <workItem from="1699613727867" duration="6181000" />
-      <workItem from="1699818697721" duration="6466000" />
+      <workItem from="1699818697721" duration="6683000" />
     </task>
     <servers />
   </component>
